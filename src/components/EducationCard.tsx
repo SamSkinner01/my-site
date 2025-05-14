@@ -20,7 +20,6 @@ function EducationCard({ collegeName, startDate, endDate, major, gpa, activities
 
                 <p className="text-gray-500 mb-2"><span className="font-semibold">Honors: </span>{honors.join(", ")}</p>
                 <p className="text-gray-500 mb-2"><span className="font-semibold">Activities: </span>{activities.join(", ")}</p>
-
             </div>
 
         </div >
