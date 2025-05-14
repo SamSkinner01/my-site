@@ -14,7 +14,6 @@ const Content = {
 
 function App() {
 
-  // need to update content based on state
   const [content, setContent] = useState(Content.PROJECTS)
 
   const handleContentChange = (newContent: Content) => {
@@ -49,7 +48,6 @@ function App() {
           Samuel Skinner</h1>
         <h2 className="text-xl font-semibold text-gray-600 mb-4">Software Engineer</h2>
         <p className="text-gray-500 text-center mb-4 px-4">An engineer who enjoys building cools things and solving problems.</p>
-        {/* get svgs for tools */}
         <div className="flex space-x-4 mb-4">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-8 h-8" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-8 h-8" />
@@ -70,7 +68,6 @@ function App() {
         <button onClick={() => handleContentChange(Content.EXPERIENCE)} className="text-gray-500 hover:underline mx-2">Experience</button>
       </nav>
 
-      {/* I need a horizontal line. its darkest in the center and fades out as it gets closer to the edge. uses gradients 50% width */}
       <div className="w-3/4 mx-auto mb-6">
         <div className="h-1 bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
       </div>

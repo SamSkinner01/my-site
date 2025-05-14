@@ -24,7 +24,6 @@ const Projects = () => {
 
     return (
         <div className="w-3/4 mx-auto mt-6 mb-6 flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-lg">
-            {/* Add note here: Some repos are private  */}
             <h2 className="text-xl font-semibold text-gray-600 mb-4 mt-4">Here are some of my projects</h2>
             <p className="text-gray-500 text-center mb-4">Click on the image to view the project.</p>
             <p className="text-gray-500 text-center mb-4">Some repos are private so you may not be able to view them... but they exist!</p>

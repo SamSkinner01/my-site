@@ -10,7 +10,6 @@ interface EducationCardProps {
 
 function EducationCard({ collegeName, startDate, endDate, major, gpa, activities, honors }: EducationCardProps) {
     return (
-        // <div className="w-3/4 mx-6 mt-6 mb-6 flex flex-row items-center justify-between bg-gray-200 rounded-lg shadow-lg p-4 hover:bg-gray-300 transition duration-300">
         <div className="w-3/4 mx-auto mt-6 mb-6 flex flex-row items-center justify-between bg-gray-200 rounded-lg shadow-lg p-4 hover:bg-gray-300 transition duration-300">
             <div className="w-full">
                 <div className="flex justify-between">

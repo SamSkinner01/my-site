@@ -1,28 +1,5 @@
 import ExperienceCard from "./components/ExperienceCard";
-/*
-Clear Guide Medical Oct. 2023 - Present
-Intern & Software Engineer Baltimore, MD
-• Engineer core logic and visualizations for a multicore data preprocessing pipeline written in Python that automates
-mask generation from manual image/video labels and streamlines offline cropping, reducing processing time by
-83% compared to the previous system.
-• Conduct large scale, diverse data collection and perform meticulous annotation to ensure robust AI training.
-• Integrate TensorRT with C++ to accelerate model runtime by 2-3x, significantly enhancing system performance
-under constrained physical conditions, such as limited power.
-• Trained a variety of AI models that have been successfully deployed in a 12 patient clinical trial, validating real
-world performance.
-• Collaborate with clinicians through trial observations and direct feedback sessions to align product development
-with clinical needs, and communicate technical challenges and new requirements to the engineering team.
-Manhattan College - School of Science May 2022 - Oct. 2022
-Research Assistant Riverdale, NY
-• Developed and implemented a Reinforcement Learning agent utilizing the Deep Q Network algorithm, PyTorch, and
-OpenAI Gym frameworks to play Atari Pong, showcasing AI and machine learning expertise.
-• Conducted in depth analysis to evaluate the effect of varying environmental factors, such as the size of the paddles,
-on learning process and agent performance, ensuring robustness and adaptability in different scenarios.
-• Maintained constant hyperparameters, such as batch size, learning rate, and the epsilon start, decay, and minimum
-values, throughout the experimentation phase, enabling accurate comparisons and reliable conclusions.
-• Observed consistent out performance when trained in a wider variety of environments over a singular environment,
-and presented these findings to the School of Science, initiating knowledge sharing within the academic community.
-*/
+
 function Experience() {
     const experience = [
         {

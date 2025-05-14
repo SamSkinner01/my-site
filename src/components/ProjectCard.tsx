@@ -3,15 +3,11 @@ function getGithubThumbnailUrl(githubUrl: string) {
     const pathParts = url.pathname.split('/');
     const repoName = pathParts[pathParts.length - 1];
     const ownerName = pathParts[pathParts.length - 2];
-    // console.log(`https://raw.githubusercontent.com/${ownerName}/${repoName}/main/thumbnail.png`);
-    // return `https://raw.githubusercontent.com/${ownerName}/${repoName}/main/thumbnail.png`;
     return `https://opengraph.githubassets.com/1/${ownerName}/${repoName}`;
 }
 
 function ProjectCard({ title, description, imageUrl }: { title: string; description: string; imageUrl: string }) {
     return (
-        // title and desc are left aligned and take 75% of the width
-        // image is right aligned and takes 25% of the width
         <div className="w-3/4 mx-auto mt-6 mb-6 flex flex-row items-center justify-between bg-gray-200 rounded-lg shadow-lg p-4 hover:bg-gray-300 transition duration-300">
             <div className="w-3/4">
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
