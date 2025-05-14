@@ -43,10 +43,10 @@ function App() {
   return (
     <>
       <div className="w-1/2 mx-auto mt-12 mb-6 flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-lg">
-        <h1
-          className="text-3xl font-bold text-gray-800 mb-2 mt-4">
-          Samuel Skinner</h1>
-        <h2 className="text-xl font-semibold text-gray-600 mb-4">Software Engineer</h2>
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-gray-800 mb-2 mt-4">Samuel Skinner</h1>
+          <h2 className="text-xl font-semibold text-gray-600 mb-4">Software Engineer</h2>
+        </div>
         <p className="text-gray-500 text-center mb-4 px-4">An engineer who enjoys building cools things and solving problems.</p>
         <div className="flex flex-wrap space-x-4 mb-4 justify-evenly">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-8 h-8" />
