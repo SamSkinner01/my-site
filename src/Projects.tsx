@@ -19,7 +19,7 @@ const Projects = () => {
         },
         {
             title: "LendAHand",
-            description: "A mobile app for helping volunteers find oppurtunities.",
+            description: "A mobile app for helping volunteers find opportunities.",
             imageUrl: "https://github.com/SamSkinner01/LendAHand",
             privateRepo: true
         }
