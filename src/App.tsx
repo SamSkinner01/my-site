@@ -43,12 +43,10 @@ function App() {
   return (
     <>
       <div className="w-1/2 mx-auto mt-12 mb-6 flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-lg">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2 mt-4">Samuel Skinner</h1>
-          <h2 className="text-xl font-semibold text-gray-600 mb-4">Software Engineer</h2>
-        </div>
+        <h1 className="text-3xl font-bold text-gray-800 mb-2 mt-4 text-center">Samuel Skinner</h1>
+        <h2 className="text-xl font-semibold text-gray-600 mb-4">Software Engineer</h2>
         <p className="text-gray-500 text-center mb-4 px-4">An engineer who enjoys building cools things and solving problems.</p>
-        <div className="flex flex-wrap space-x-4 mb-4 justify-evenly">
+        <div className="flex flex-wrap space-y-2 space-x-4 mb-4 justify-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-8 h-8" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-8 h-8" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-8 h-8" />
@@ -58,9 +56,16 @@ function App() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" className="w-8 h-8" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="w-8 h-8" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-8 h-8" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-8 h-8" />
         </div>
       </div >
+      <div className='flex flex-row items-center justify-center flex-wrap space-x-4 space-y-2 mb-4'>
+        <a href='https://github.com/SamSkinner01' target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-8 h-8" />
+        </a>
+        <a href='https://www.linkedin.com/in/samuel-skinner904/' target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-8 h-8" />
+        </a>
+      </div>
       <nav className="flex justify-center mb-4">
         <button onClick={() => handleContentChange(Content.PROJECTS)} className="text-gray-500 hover:underline mx-2">Projects</button>
         <button onClick={() => handleContentChange(Content.EDUCATION)} className="text-gray-500 hover:underline mx-2">Education</button>
