@@ -3,33 +3,33 @@ import Projects from './Projects';
 import Education from './Education';
 import Experience
   from './Experience';
-type Content = 'about' | 'projects' | 'education' | 'experience';
+type ContentEnum = 'about' | 'projects' | 'education' | 'experience';
 
-const Content = {
-  ABOUT: 'about' as Content,
-  PROJECTS: 'projects' as Content,
-  EDUCATION: 'education' as Content,
-  EXPERIENCE: 'experience' as Content,
+const ContentEnum = {
+  ABOUT: 'about' as ContentEnum,
+  PROJECTS: 'projects' as ContentEnum,
+  EDUCATION: 'education' as ContentEnum,
+  EXPERIENCE: 'experience' as ContentEnum,
 };
 
 function App() {
 
-  const [content, setContent] = useState(Content.PROJECTS)
+  const [content, setContent] = useState(ContentEnum.PROJECTS)
 
-  const handleContentChange = (newContent: Content) => {
+  const handleContentChange = (newContent: ContentEnum) => {
     setContent(newContent)
   }
 
   const renderContent = () => {
     switch (content) {
-      case Content.ABOUT:
+      case ContentEnum.ABOUT:
         return <div>About</div>
-      case Content.PROJECTS:
+      case ContentEnum.PROJECTS:
         return <Projects />
-      case Content.EDUCATION:
+      case ContentEnum.EDUCATION:
         // return <div>Education</div>
         return <Education />
-      case Content.EXPERIENCE:
+      case ContentEnum.EXPERIENCE:
         // return <div>Experience</div>
         return <Experience />
       default:
@@ -67,9 +67,24 @@ function App() {
         </a>
       </div>
       <nav className="flex justify-center mb-4">
-        <button onClick={() => handleContentChange(Content.PROJECTS)} className="text-gray-500 hover:underline mx-2">Projects</button>
-        <button onClick={() => handleContentChange(Content.EDUCATION)} className="text-gray-500 hover:underline mx-2">Education</button>
-        <button onClick={() => handleContentChange(Content.EXPERIENCE)} className="text-gray-500 hover:underline mx-2">Experience</button>
+        <button
+          onClick={() => handleContentChange(ContentEnum.PROJECTS)}
+          className={`mx-2 border border-gray-300 px-2 py-2 rounded ${content === ContentEnum.PROJECTS ? 'text-gray-800 font-bold' : 'text-gray-500 hover:underline'}`}
+        >
+          Projects
+        </button>
+        <button
+          onClick={() => handleContentChange(ContentEnum.EDUCATION)}
+          className={`mx-2 border border-gray-300 px-2 py-2 rounded ${content === ContentEnum.EDUCATION ? 'text-gray-800 font-bold' : 'text-gray-500 hover:underline'}`}
+        >
+          Education
+        </button>
+        <button
+          onClick={() => handleContentChange(ContentEnum.EXPERIENCE)}
+          className={`mx-2 border border-gray-300 px-2 py-2 rounded ${content === ContentEnum.EXPERIENCE ? 'text-gray-800 font-bold' : 'text-gray-500 hover:underline'}`}
+        >
+          Experience
+        </button>
       </nav>
 
       <div className="w-3/4 mx-auto mb-6">
