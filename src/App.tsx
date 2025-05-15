@@ -44,7 +44,7 @@ function App() {
     <>
       <div className="w-1/2 mx-auto mt-12 mb-6 flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold text-gray-800 mb-2 mt-4 text-center">Samuel Skinner</h1>
-        <h2 className="text-xl font-semibold text-gray-600 mb-4">Software Engineer</h2>
+        <h2 className="text-xl font-semibold text-gray-600 mb-4 text-center">Software Engineer</h2>
         <p className="text-gray-500 text-center mb-4 px-4">An engineer who enjoys building cools things and solving problems.</p>
         <div className="flex flex-wrap space-y-2 space-x-4 mb-4 justify-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-8 h-8" />

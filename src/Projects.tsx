@@ -27,7 +27,7 @@ const Projects = () => {
 
     return (
         <div className="w-3/4 mx-auto mt-6 mb-6 flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold text-gray-600 mb-4 mt-4">Here are some of my projects</h2>
+            <h2 className="text-xl font-semibold text-gray-600 mb-4 mt-4 text-center">Here are some of my projects</h2>
             <p className="text-gray-500 text-center mb-4">Always under construction...</p>
 
             {projects.map((project, index) => (
